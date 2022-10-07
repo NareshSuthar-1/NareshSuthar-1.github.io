@@ -1,7 +1,5 @@
-### Hi there 👋, My Name is Naresh..
+# Hi there 👋, My Name is Naresh..
 #### I am Bsc-IT Student with graduating in the year 2023
-![I am Bsc-IT Student with graduating in the year 2023](https://arturssmirnovs.github.io/github-profile-readme-generator/images/banner.png)
-
 
 Skills:  JAVA / C or C++ / .NET / JEE / PHP / MYSQL / SQL / PLSQL REACT NATIVE / JS / HTML / CSS / 
 
