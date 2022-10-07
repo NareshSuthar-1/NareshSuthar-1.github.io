@@ -11,3 +11,11 @@ Skills:  JAVA / C or C++ / .NET / JEE / PHP / MYSQL / SQL / PLSQL REACT NATIVE /
 
 [<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/https://github.com/NareshSuthar-1)  
 
+Skills:  JAVA / C or C++ / .NET / JEE / PHP / MYSQL / SQL / PLSQL REACT NATIVE / JS / HTML / CSS / 
+
+- 🔭 I’m currently working on English Improvement App ( REACT NATIVE ) 
+- 🌱 I’m currently learning REACT NATIVE AND FIREBASE 
+
+
+[<img src='https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg' alt='github' height='40'>](https://github.com/https://github.com/NareshSuthar-1)  
+
