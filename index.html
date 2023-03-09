@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+    <!-- FONT AUSEOM -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/animate.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- ajax ang jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Naresh.</title>
+    <script>
+        $(document).ready(function () {
+            $(".moreProject-btn").click(function () {
+                jQuery.ajax({
+                    url: 'Projects.html',
+                    type: 'GET',
+                    success: function (data) {
+                        $(".body-bg").html(data);
+                    }
+                });
+            });
+        });
+    </script>
+    <style>
+        /* -------------------------------------------------------------------- */
+
+        .elem-1.active {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            fill: transparent;
+            stroke: teal;
+            animation: srtole .5s forwards linear;
+        }
+
+        @keyframes srtole {
+            to {
+                fill: white;
+                stroke-dashoffset: 0;
+            }
+        }
+
+        .sectionHeading {}
+
+        .sectionHeading .text {
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, .5), 10px 10px 20px rgba(0, 0, 0, .4), 15px 15px 30px rgba(0, 0, 0, .1);
+            font-weight: bold;
+            color: #222;
+            color: white;
+        }
+
+        /* ---------------------------------------------- logo ------------------------------ */
+    </style>
+</head>
+
+<body onload="LodoDoc()">
+    <!-- ---------------------------  PRE -  LODER  ------------------------------- -->
+
+    <div class="container-fluid" id="Loging">
+        <div class="loginglogo">
+            <svg id="LogingSVG" width="212" height="210" viewBox="0 0 212 210" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d)">
+                    <path
+                        d="M63.7533 10.3787L6.21169 66.322C5.43704 67.0751 5 68.1096 5 69.19V109.381C5 112.939 9.29747 114.726 11.8205 112.217L91.7131 32.7686C93.4449 31.0465 93.2425 28.188 91.2855 26.727L68.9345 10.0414C67.3592 8.86536 65.1628 9.00837 63.7533 10.3787Z"
+                        fill="#1E98B2" stroke="black" class="path-1" />
+                    <path
+                        d="M147.579 189.921L205.828 131.672C206.579 130.921 207 129.904 207 128.843V85.6942C207 82.1253 202.681 80.343 200.164 82.8735L118.585 164.898C116.928 166.564 117.058 169.294 118.866 170.796L142.195 190.17C143.784 191.49 146.118 191.382 147.579 189.921Z"
+                        fill="#1E98B2" stroke="black" class="path-2" />
+                    <path
+                        d="M5 49.6772V5C5 2.79086 6.79086 1 9 1H55.9881C59.6005 1 61.3623 5.40963 58.7443 7.89882L11.7562 52.576C9.20876 54.9982 5 53.1924 5 49.6772Z"
+                        fill="#1E98B3" stroke="black" class="path-3" />
+                    <path
+                        d="M77 145.545V192C77 194.209 75.2091 196 73 196H25.7709C22.1913 196 20.4139 191.658 22.9659 189.148L70.195 142.693C72.7243 140.206 77 141.997 77 145.545Z"
+                        fill="#1E98B3" stroke="black" class="path-4" />
+                    <path
+                        d="M138 51.4549V5C138 2.79086 139.791 1 142 1H189.229C192.809 1 194.586 5.34157 192.034 7.85171L144.805 54.3066C142.276 56.7944 138 55.0026 138 51.4549Z"
+                        fill="#1E98B3" stroke="black" class="path-5" />
+                    <path
+                        d="M207 150.545V197C207 199.209 205.209 201 203 201H155.771C152.191 201 150.414 196.658 152.966 194.148L200.195 147.693C202.724 145.206 207 146.997 207 150.545Z"
+                        fill="#1E98B3" stroke="black" class="path-5" />
+                    <path
+                        d="M95.1242 35.4561L6.17625 124.111C5.42324 124.861 5 125.881 5 126.944V186.374C5 189.933 9.29966 191.72 11.8221 189.208L134.739 66.8403C136.461 65.1255 136.269 62.2835 134.331 60.8164L100.362 35.1C98.7718 33.8959 96.5372 34.0478 95.1242 35.4561Z"
+                        fill="#1E98B2" stroke="black" class="path-6" />
+                    <path
+                        d="M113.102 161.911L205.821 69.6836C206.576 68.9329 207 67.9122 207 66.8477L207 12.9226C207 9.32216 202.615 7.55461 200.118 10.1484L80.958 133.927C79.3559 135.591 79.4925 138.263 81.2559 139.755L107.698 162.129C109.283 163.47 111.63 163.376 113.102 161.911Z"
+                        fill="#1E98B2" stroke="black" class="path-7" />
+                </g>
+                <defs>
+                    <filter id="filter0_d" x="0.5" y="0.5" width="211" height="209" filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha" />
+                        <feOffset dy="4" />
+                        <feGaussianBlur stdDeviation="2" />
+                        <feComposite in2="hardAlpha" operator="out" />
+                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="LoginSublogo">
+            <h1>
+                Naresh Suthar
+            </h1>
+        </div>
+    </div>
+
+    <!-- ---------------------------  NAVBAR -------------------------------------- -->
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container">
+            <label class="theme-switch">
+                <input type="checkbox" id="DarkMode">
+                <span class="slider round"></span>
+            </label>
+            <a class="navbar-brand" href="./index.html">
+                <div class="logo-outline-1">
+
+                </div>
+                <h2 class="Brand-name" style="font-weight: bold;"> NARESH</h2>
+                <div class="logo-outline-2"></div>
+            </a>
+            <button class="btn " id="ToggleBtn">
+                <div class="bar bar-1"></div>
+                <div class="bar bar-2"></div>
+                <div class="bar bar-3"></div>
+            </button>
+            <div class="" id="navbarMenu">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#ABOUT-ME">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Project-Section">PROJECTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#Contact-Section">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="body-bg">
+
+        <!-- ---------------------------  BANNER -------------------------------------- -->
+        <div class="HeaderBcakground-container">
+            <div id="Banner-header-img"></div>
+
+        </div>
+        <div class="container-fluid mb-5" id="Banner-container">
+            <div class="container ">
+                <div class="row justify-content-center ">
+                    <div class="col-md-8 left-col">
+                        <h1 class="BannerHeading">
+                            <span class="h-1">Hi.</span><br> <span class="h-2">I am Naresh</span>
+                        </h1>
+                        <p>Lorem ipsum dolor sit ahitecto iustahitecto iust ahitecto iustahitecto iust ahitecto iusto.
+                        </p>
+                        <button class="btn" id="bannerBtn">Apply now</button>
+                    </div>
+                    <div class="col-md-4 right-col">
+                        <img src="./image/m.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------  ABOUT ME -------------------------------------- -->
+        <div class="container-fluid" id="ABOUT-ME">
+            <div class="sectionHeading container-fliud">
+                <h1 class="text">About me</h1>
+            </div>
+            <div class="container" id="About-Section">
+                <div class="row">
+                    <div class="col-md-4 About-Section-left">
+                        <div class="myImg">
+                            <img src="./image/.jpeg" alt="">
+                        </div>
+                        <div class="socila-mediaHandles">
+                            <a href=""> <i class="fab fa-twitter "></i></a>
+                            <a
+                                href="https://in.linkedin.com/in/naresh-suthar-012a5820a?trk=people-guest_people_search-card">
+                                <i class="fab fa-linkedin-in "></i> </a>
+                            <a href=""> <i class="fab fa-google "></i></a>
+                            <a href="https://github.com/NareshSuthar-1/NareshSuthar-1.github.io"><i
+                                    class="fab fa-github-square"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 About-Section-right">
+                        <h1>Lets Introduce Myself</h1>
+                        <p> I am,<strong style="margin: 0 5px 0 5px;">Naresh Suthar</strong> 
+                        
+                        
+                        </p>
+                        <button class="btn btn-primary">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------  SKILLS -------------------------------------- -->
+            <div class="container" id="Skill-Section">
+                <div class="row">
+                    <div class="col-md-2 Skill-SubHeading">
+                        Skills
+                    </div>
+                    <div class="col-md-10 Skill-Container row">
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/react.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">React Native</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/java.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">Java</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/python.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">Python</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/html.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">HTML</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/css.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">CSS</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/javascript.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">JavaScript</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/mysql.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">MySql</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/php.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">pHp</strong>
+                        </div>
+
+
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/c.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">Cplusplus</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/visual-studio-code.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">VSCode</strong>
+                        </div>
+
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/figma.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">Figma</strong>
+                        </div>
+                        <div class="col-sm-3 skill-Items">
+                            <img src="./image/Skill/Github.svg" alt="" class="SkillImg">
+                            <strong class="SkillName">GitHub</strong>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------  PROJECTS ----------------------------------------!-->
+        <div class="container-fliud" id="Project-Section" style=" position: relative;">
+            <div class="sectionHeading container-fliud">
+                <h1 class="text">recent projects</h1>
+            </div>
+            <div class="project-container container-fliud">
+                <div class="project-item row">
+                    <div class="col-lg-7 project-img">
+                        <img src="./image/VNLZ2367.JPG " alt="">
+                    </div>
+                    <div class="col-lg-5 project-detail">
+                        <h1 class="project-title">title</h1>
+                        <p class="project-desp">para</p>
+                    </div>
+                </div>
+                <div class="project-item row">
+                    <div class="col-lg-7 project-img">
+                        <img src="./image/VNLZ2367.JPG " alt="">
+                    </div>
+                    <div class="col-lg-5 project-detail">
+                        <h1 class="project-title">ti tle</h1>
+                        <p class="project-desp">para</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <a class="btn moreProject-btn fs-4 ">More projects <i class="fad fa-arrow-right ps-1"></i></a>
+            </div>
+        </div>
+
+        <!-- ---------------------------  CONTACT -------------------------------------- -->
+        <div class="container-fluid" id="Contact-Section">
+            <div class="sectionHeading container-fliud" style="margin-left: 0;">
+                <h1 class="text">Contact</h1>
+            </div>
+            <div class="row">
+                <div class=" col-md-6 Contact-Details">
+                    <div class="Contact-info "><i class="fas fa-phone-alt"></i>
+                        <h5>+91----------</h5>
+                    </div>
+                    <div class="Contact-info">
+                        <i class="far fa-envelope"></i>
+                        <h5>nareshsuthar@gmail</h5>
+                    </div>
+                    <div class="Contact-info"><i class="fas fa-map-marker-alt"></i>
+                        <h5>Mumbai,Mahrashtra (INDIA).</h5>
+                    </div>
+                </div>
+                <div class=" col-md-6 Conatct-form ">
+                    <form action="">
+                        <input type="text" name="name" id="" placeholder="Name Surname">
+                        <input type="email" name="emal" id="" placeholder="Email Adress">
+                        <textarea name="msg_" rows="3" placeholder="Your Message"></textarea>
+                        <button type="reset" class="btn" id="send-msg">Send</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ---------------------------  FLOTING SOCIAL LINKS -------------------------------------- -->
+        <div class="Floting social-section">
+            <div class="top-links">
+                <a href="" style="--He:110px;--tr-delay:0;"> <i class="fab fa-twitter "></i></a>
+                <a href="" style="--He:63px;--tr-delay:.55s;"> <i class="fab fa-linkedin-in "></i> </a>
+            </div>
+            <div class="MoreBtn">+</div>
+            <div class="botton-links">
+                <a href="" style="--He:-63px;--tr-delay:.55s;"> <i class="fab fa-google "></i></a>
+                <a href="" style="--He:-110px;--tr-delay:0;"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------  FOOTER -------------------------------------- -->
+    <footer class="container-fluid ">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom  w-100">
+            <div class="social-navbar">
+                <a href=""> <i class="fab fa-google "></i></a>
+                <a href=""> <i class="fab fa-twitter "></i></a>
+                <a href=""> <i class="fab fa-linkedin-in "></i> </a>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+                <a href=""><i class="fab fa-github-square"></i></a>
+            </div>
+            <div class="copyright-message">
+                @naresh COPY RIGHT
+            </div>
+        </div>
+    </footer>
+    <!-- --------------------------- SCROLL TO TOP BUTTON  ------------------------------- -->
+    <button onclick="ScrollToTOP()" id="ScrllToTOPbtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="./JS/json.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/scrolljs.js"></script>
+</body>
+
+</html>

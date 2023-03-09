@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="./logo.svg" type="image/x-icon">
+    <!-- FONT AUSEOM -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Naresh.</title>
+    <style>
+        .sectionHeading .text {
+            text-align: center;
+        }
+    </style>
+    <script src="./JS/api.js"></script>
+</head>
+
+<body>
+    <div class="container-fliud" id="Project-Section" style=" position: relative;">
+
+        <div class="sectionHeading container-fliud py-5 ">
+            <h1 class="text"> projects</h1>
+        </div>
+        <div class="container">
+            <div class="list-group list-group-horizontal project-list">
+                <a class="list-group-item list-group-item-action project-list-item active" aria-current="true">
+                    All Projects
+                </a>
+                <a class="list-group-item list-group-item-action project-list-item">Full Stack development</a>
+                <a class="list-group-item list-group-item-action project-list-item">Python</a>
+                <a class="list-group-item list-group-item-action project-list-item">web design</a>
+
+            </div>
+        </div>
+        <div class="project-container container-fliud">
+            <div class="project-item row">
+                <div class="col-lg-7 project-img">
+                    <img src="./image/VNLZ2367.JPG " alt="">
+                </div>
+                <div class="col-lg-5 project-detail">
+                    <h1 class="project-title">title</h1>
+                    <p class="project-desp">para</p>
+                </div>
+            </div>
+            <div class="project-item row">
+                <div class="col-lg-7 project-img">
+                    <img src="./image/VNLZ2367.JPG " alt="">
+                </div>
+                <div class="col-lg-5 project-detail">
+                    <h1 class="project-title">title</h1>
+                    <p class="project-desp">para</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="./JS/json.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/scrolljs.js"></script>
+    <script src="./JS/project.js"></script>
+    <script src="./JS/script.js"></script>
+    <script>
+        let MyAPI = myapi;
+        console.log(myapi.Sub_proj[0].fullStackDevop[0])
+            // MyAPI.projects.forEach(element => {
+            //     console.log(element)
+            // });
+            // MyAPI.Sub_proj.forEach(element => {
+            //     element.forEach(element => {
+            //         console.table(element)
+            //     });
+            // });
+    </script>
+</body>
+
+</html>

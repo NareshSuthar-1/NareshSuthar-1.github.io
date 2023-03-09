@@ -1,0 +1,93 @@
+/* 
+  1- NAVBAR TOGGLE BUTTON
+  2- BANNER
+  3- PRE LODER
+
+*/
+
+
+/* ---------------------------------   NAVBAR TOGGLE BUTTON   -------------------------------*/
+
+@keyframes NavBarExpAnimation {
+    0% {
+        display: block;
+        -webkit-transform: translateZ(-800px) rotateX(90deg);
+        transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateZ(-160px) rotateX(87deg);
+        transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotateX(0);
+        transform: translateZ(0) rotateX(0);
+    }
+}
+
+@keyframes NavBarColapseAnimation {
+    0% {
+        -webkit-transform: translateZ(0) rotateX(0);
+        transform: translateZ(0) rotateX(0);
+    }
+    50% {
+        -webkit-transform: translateZ(-160px) rotateX(87deg);
+        transform: translateZ(-160px) rotateX(87deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateZ(-800px) rotateX(90deg);
+        transform: translateZ(-800px) rotateX(90deg);
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+/*  ------------------  BANNER SVG ANIMATION  --------------------------- */
+
+@keyframes BnnerSVG_Animation {
+    0% {
+        transform: rotate3d(1, 20, 10, 326deg) translate(0px, 0);
+    }
+    50% {
+        transform: rotate3d(1, 20, 10, 320deg) translate(0px, -15px);
+    }
+    100% {
+        transform: rotate3d(1, 20, 10, 330deg) translate(15px, 0);
+    }
+}
+
+
+/* ---------------------------------    PRE LODER   -------------------------------*/
+
+@keyframes AnimatedGradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes LodingSVG_StrokeAni {
+    to {
+        stroke-dashoffset: 0;
+        fill-opacity: 1;
+    }
+}
