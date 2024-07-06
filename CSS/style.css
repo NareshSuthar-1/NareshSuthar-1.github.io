@@ -35,17 +35,20 @@ PRE LODER
     }
 
     :root {
-        --bg-color: #F2F1EF;
+        --bg-color: #ffffff;
         --bg-color-image: #F2F1EF;
-        --skil-box: #f2f1efe8;
+        --skil-box: rgb(249, 249, 249, 0.63);
         --font-color: #222;
         --title-color: #222;
         --Subtitle-color: rgb(44, 44, 44);
         --prar-color: #292f33;
         --header-bg-img-color: #5050511f;
-        --footer-bg-color: #5050511f;
+        --footer-bg-color: #ffffff;
+        --footer-text: #222;
         --bg-ccontact: #5050511f;
-    }
+        --Poject-bg: #f9f9f9e8;
+        --Poject-hover: #f9f9f9;
+          }
 
     [data-theme="dark"] {
         --bg-color: #2d3436;
@@ -55,13 +58,16 @@ PRE LODER
         --title-color: #fec150;
         --Subtitle-color: #fec150;
         --prar-color: #dddad1;
-        --footer-bg-color: linear-gradient(270deg, #8743FF 0%, #4136F1 100%, #4136F1 100%);
+        --footer-bg-color: #5050511f;
+        --footer-text: #ffff;
         --header-bg-img-color: linear-gradient(270deg, #8743FF 0%, #4136F1 100%, #4136F1 100%);
         --bg-ccontact: transparent;
-    }
+        --Poject-bg: #333636e8;
+        --Poject-hover: black;}
 
     html {
         scroll-behavior: smooth;
+           transition: 0.5s ease-in;
     }
 
     .sectionHeading {
@@ -83,8 +89,8 @@ PRE LODER
     #ScrllToTOPbtn {
         display: none;
         position: fixed;
-        bottom: 20px;
-        right: 30px;
+        bottom: 25px;
+        right: 25px;
         z-index: 99;
         font-size: 18px;
         border: none;
@@ -93,7 +99,7 @@ PRE LODER
         background-color: var(--title-color);
         color: white;
         cursor: pointer;
-        padding: 10px 15px;
+        padding: 5px 10px;
         border-radius: 5px;
     }
 
